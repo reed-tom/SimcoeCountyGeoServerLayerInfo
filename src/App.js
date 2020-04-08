@@ -135,7 +135,7 @@ class App extends Component {
                   <input type="checkbox" onChange={this.onTermsChange}></input>By dowloading this information you accept the terms of the Open Government License - Simcoe County.
                 </label>
                 &nbsp;
-                <a href="http://maps.simcoe.ca/openlicense.html" target="_blank" rel="noopener noreferrer">
+                <a href="https://intra.dev.regionalgis.mto.gov.on.ca/geomatics/splash/3/view" target="_blank" rel="noopener noreferrer">
                   View Terms of Use
                 </a>
               </div>
@@ -171,22 +171,16 @@ class App extends Component {
         <div className="footer">
           <div style={{ float: "left" }}>
             <div>
-              <a href="http://maps.simcoe.ca/openlicense.html" target="_blank" rel="noopener noreferrer">
+              <a href="https://intra.dev.regionalgis.mto.gov.on.ca/geomatics/splash/3/view" target="_blank" rel="noopener noreferrer">
                 View Terms of Use
               </a>
             </div>
+            <div>
             Layer info page generated using{" "}
             <a href="https://intra.dev.regionalgis.mto.gov.on.ca/map/" target="_blank">
             https://intra.dev.regionalgis.mto.gov.on.ca/map/
             </a>{" "}
             interactive mapping.
-            <br />
-            <div>
-              Layer info page generated using{" "}
-              <a href="https://opengis.simcoe.ca" target="_blank" rel="noopener noreferrer">
-                opengis.simcoe.ca
-              </a>{" "}
-              interactive mapping.
               <br />
             </div>
           </div>
