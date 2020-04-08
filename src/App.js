@@ -175,6 +175,11 @@ class App extends Component {
                 View Terms of Use
               </a>
             </div>
+            Layer info page generated using{" "}
+            <a href="https://intra.dev.regionalgis.mto.gov.on.ca/map/" target="_blank">
+            https://intra.dev.regionalgis.mto.gov.on.ca/map/
+            </a>{" "}
+            interactive mapping.
             <br />
             <div>
               Layer info page generated using{" "}
