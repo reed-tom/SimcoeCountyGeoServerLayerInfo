@@ -39,7 +39,9 @@ class App extends Component {
   // CLEAN UP THE PROJECTION STRING
   getFormattedProjection = () => {
     const projClass = this.state.layerInfo.nativeCRS["@class"];
-    let projArray = this.state.layerInfo.nativeCRS["$"].split('"');
+    let projArray = [];
+    if (this.state.layerInfo.nativeCRS["$"] !== undefined)projArray = this.state.layerInfo.nativeCRS["$"].split('"');
+    else projArray = this.state.layerInfo.nativeCRS.split('"');
 
     return helpers.toTitleCase(projClass) + " - " + projArray[1];
   };
@@ -205,7 +207,7 @@ function importAllImages(r) {
 
 function FieldItem(props) {
   const fieldInfo = props.fieldInfo;
-  const name = fieldInfo.name;
+  const name = fieldInfo.name.toUpperCase().split("_").join(" ");
   const dataTypeArray = fieldInfo.binding.split(".");
   const dataType = dataTypeArray[dataTypeArray.length - 1];
 

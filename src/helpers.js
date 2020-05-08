@@ -14,17 +14,20 @@ export function getJSON(url, callback){
   });
 }
 
+// URL FRIENDLY STRING ID
+export function getUID(){
+  return shortid.generate();;
+}
+
 export function toTitleCase(str) {
-  return str.replace(
+  if (str === null || str === undefined) return "";
+  return str.toString().replace(
       /\w\S*/g,
       function(txt) {
           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
       }
   );
-};
-
-// URL FRIENDLY STRING ID
-export function getUID(){
-  return shortid.generate();
 }
+
+
   
